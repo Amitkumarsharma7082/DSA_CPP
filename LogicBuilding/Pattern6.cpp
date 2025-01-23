@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    /*
+        1234
+        123
+        12
+        1
+    */
+
+   int n;
+   cout << "Enter the value of n : " << endl;
+   cin >> n;
+
+for(int i = 1; i <= n; i++) {
+    for(int j = 1; j <= n-i+1; j++) {
+         cout << j;
+    }
+    cout << endl;
+   }
+}
