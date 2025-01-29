@@ -1,0 +1,13 @@
+**Space Complexity**
+
+Space complexity measures the amount of memory an algorithm requires as a function of the input size. It is a critical aspect of algorithm efficiency, especially in memory-constrained environments. Space complexity can be broken down into two main components:
+
+Auxiliary Space: This refers to the extra space or temporary space used by the algorithm, apart from the input data. It includes variables, data structures, and function call stacks that the algorithm utilizes during execution.
+Input Space: This is the memory occupied by the input data itself. In many cases, the input space is considered negligible when analyzing space complexity, as it is independent of the algorithm's operations.
+Examples of Space Complexity
+Array of Size N: Consider an array with N elements. The space complexity in this case is O(N), as the memory required scales linearly with the number of elements in the array.
+Recursive Function: For a recursive algorithm, the space complexity is determined by the call stack, which grows with the depth of the recursion. For a recursive function that calls itself N times, the space complexity is O(N).
+Conclusion
+Understanding time and space complexity is fundamental to evaluating and optimizing algorithms. Time complexity provides insight into how the execution time of an algorithm scales with input size, while space complexity measures the memory usage. By analyzing these complexities, one can choose the most efficient algorithm for a given problem, ensuring that both time and resources are used effectively.
+
+Note : For a deeper understanding, users are encouraged to test their knowledge by analyzing different algorithms and comparing their complexities. Video editorial attached above can provide additional insights and help validate the analyses.
