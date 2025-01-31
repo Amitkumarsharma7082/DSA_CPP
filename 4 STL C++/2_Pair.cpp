@@ -10,7 +10,7 @@ void explainPair() {
     cout << "Pair 1 : " << pt2.first << " and Pair 2 : " << pt2.second << endl;
 
     // pair<pair<int, char>, int> pt3 = make_pair((2, 'a'), 5);
-    // cout << "Pair 1 : " << pt3.first << endl;
+    // cout << "Pair 1 : " << pt3.first.second << endl;
 }
 
 int main() {
