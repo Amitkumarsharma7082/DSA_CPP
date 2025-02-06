@@ -3,11 +3,85 @@ using namespace std;
 
 void explainVector() {
     vector<int> vec;
+    vec.push_back(7);
+    vec.push_back(8);
     vec.push_back(1);
     vec.push_back(2);
     vec.push_back(0);
 
-    for (int i = 0; i < vec.size(); i++) {
+vec.insert(vec.begin() + 2, 4);
+
+    for (auto i : vec) {
+        cout << i << " ";
+    }
+    cout << endl;
+
+
+//     vector<int> vec1;
+//     vec1.push_back(0);
+//     vec1.push_back(3);
+
+// swap(vec, vec1);
+
+
+    // vec.pop_back(); // last element is pop
+
+    // cout << vec.front() << endl; // front element
+    // cout << vec.back() << endl; // back element
+
+// access the element : 
+    // cout << "Vector access : " << vec[2] << endl;
+    // cout << "Vector access at method : " << vec.at(1) << endl;
+
+    // for (auto i : vec) {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+
+    // vec.erase(vec.begin() + 1); // vector doesn't have capbility to erase one element
+
+    // for (auto i : vec) {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+
+
+
+
+
+
+
+    // for (auto i : vec) {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+
+    // vector<int> duplVec(vec.begin() + 1, vec.end() - 1);
+    // for (auto i : duplVec) {
+    //     cout << i << " ";
+    // }
+    // cout << endl;
+
+    // auto reverseBegin = vec.rbegin();
+    // auto reverseEnd = vec.rend(); // " " 1,2,0 > point to space
+
+    // for (auto i = reverseBegin; i < reverseEnd; i++) {
+    //     cout << *i << " ";
+    // }
+    // cout << endl;
+}
+
+int main() {
+    explainVector();
+    return 0;
+}
+
+
+/*
+Notes : 
+1. vector<int> vec(5); > all 5 garbage value print;
+2. vector<int> vec(5,8); > all 5 : 8 garbage value print;
+for (int i = 0; i < vec.size(); i++) {
         cout << vec[i] << " ";
     }
     cout << endl;
@@ -37,16 +111,7 @@ void explainVector() {
         cout << *j << " ";
     }
     cout << endl;
-}
-
-int main() {
-    explainVector();
-    return 0;
-}
-
-
-/*
- Notes : 
+ 
 
 (1) 
   vector<int> :: iterator beginItr = vec.begin();

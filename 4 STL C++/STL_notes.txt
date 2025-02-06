@@ -6,18 +6,18 @@ Iterators
 
 1. pair (utility, library) : (Done)
 2. vectors 
-    - initialisation
-    - push_back
-    - front
-    - back
-    - iterator
-    - for each
-    - erase
-    - insert
-    - size
-    - access element
-    - swap
-    - clear
+    - initialisation - done
+    - push_back - done
+    - front - done
+    - back - done
+    - iterator - done
+    - for each - done
+    - erase - done
+    - insert - done
+    - size - done
+    - access element - done
+    - swap - done
+    - clear - done
 
 3. list
     - push_front / emplace_front
