@@ -23,6 +23,31 @@ Iterators
     - push_front / emplace_front
     - front
 
-4. deque
+4. deque - done
 
-5. stack (lifo)
+5. stack (lifo) -- Done
+    - push / emplace
+    - front
+    - pop
+    - size
+    - swap
+    - empty
+
+6. Queue (fifo) -- Done
+    - push / emplace
+    - front
+    - pop
+    - size
+    - swap
+    - empty
+
+7. Priority Queue (Internally Heap) -- Done
+    - top 
+    - pop
+    - push / emplace
+    - empty
+    - size
+
+8. Set Container 
+
+
