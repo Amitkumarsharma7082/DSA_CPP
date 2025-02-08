@@ -19,7 +19,7 @@ Iterators
     - swap - done
     - clear - done
 
-3. list
+3. list - done
     - push_front / emplace_front
     - front
 
