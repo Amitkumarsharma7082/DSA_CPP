@@ -4,10 +4,10 @@ using namespace std;
 void explainList() {
     // list is also container
     list<int> ls = {6,7};
-    ls.push_front(1);
+    ls.push_front(1); // push the element in front of list
 
     for (auto it : ls) {
-        cout << it << " ";
+        cout << it << " "; // ouput : 1 6 7 
     }
     cout << endl;
 }

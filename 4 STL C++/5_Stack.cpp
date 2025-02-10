@@ -2,6 +2,7 @@
 using namespace std;
 
 void explainStack() {
+    // stack is used while to print the element
     stack<int> st;
     st.push(1);
     st.push(7);

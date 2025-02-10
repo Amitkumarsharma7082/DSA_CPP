@@ -12,7 +12,7 @@ void explainQueue() {
     while (q.empty() == false)
     {
         /* code */
-        cout << q.front() << " ";
+        cout << q.front() << " "; // not used top
         q.pop();
         cout << endl;
     }
@@ -45,7 +45,7 @@ smallPQ.push(0);
 smallPQ.push(113);
 
 while (smallPQ.empty() == false) {
-    cout << smallPQ.top () << " ";
+    cout << smallPQ.top () << " "; // output : 0 1 2 10 11 113
     smallPQ.pop();
     cout << endl; 
 }

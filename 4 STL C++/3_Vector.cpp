@@ -9,7 +9,7 @@ void explainVector() {
     vec.push_back(2);
     vec.push_back(0);
 
-vec.insert(vec.begin() + 2, 4);
+vec.insert(vec.begin() + 2, 4); // insert the element
 
     for (auto i : vec) {
         cout << i << " ";
