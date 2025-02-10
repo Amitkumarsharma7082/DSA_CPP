@@ -49,5 +49,24 @@ Iterators
     - size
 
 8. Set Container 
+    - insert / emplace - done
+    - find() - done
+    - erase (iterator, element, (it1, it22)) - done
+    - count - done
+    - lower_bound
+    - upper_bound
+
+9. multiset
+    - insert 
+    - erase
+
+10. unordered_set (lower_bound and upper_bound does not exist)
+
+11. map
+    - insert / emplace / map[key] = value
+    - find
+    - empty
+    - size
+
 
 
