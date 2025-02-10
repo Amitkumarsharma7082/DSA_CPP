@@ -75,10 +75,10 @@ Iterators
     - equal range
 
 13. Functions and Algorithms
-    - sort
-    - accumulate
-    - count
-    - find
+    - sort - done
+    - accumulate - done
+    - count - done
+    - find - done
     - comparator
     - next_permutation
     - max_element

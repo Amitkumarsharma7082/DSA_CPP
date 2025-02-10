@@ -24,6 +24,46 @@ void expalinSort() {
     cout << endl;
 }
 
+// accumulate
+void explainAccumulate() {
+    int arr[5] = {6, 2, 1, 7, 0}; 
+    // submition of arr:
+    // arr, arr + 5, 0 > 0 means that start from 0 like also : 1 
+    // if we start with 1 + all array element
+    int sum = 0;
+    // cout << accumulate(arr, arr + 5, sum) << " " << endl;// ouput : 16 (6+2+1+7+0 + (0))
+ 
+}
+
+// count
+void explainCount() {
+    int arr[5] = {6, 2, 1, 1, 0};
+    int num = 1; // count how many 1's
+    cout << count(arr, arr + 5, num) << endl; // ouput: 2  > {6, 2, 1, 1, 0};
+}
+
+// find
+void explainFind() {
+    int arr[5] = {6, 2, 1, 1, 0};
+    int num = 8;
+
+    /*
+In this why use find because in this array
+find and that point to this array 
+and returns first find : 1 from array. 
+    */
+    auto it = find(arr, arr + 5, num);
+    if (it == arr + 5) { // point to the last iterator
+        cout << "Not Found" << endl;
+    }
+    // cout << *it << " " << endl; // output : 1
+    // cout << find(arr, arr+5 , num) << endl; // output : 0x7ff7b7b4d178
+}
+
+
 int main() {
-    expalinSort();
+    // expalinSort();
+    // explainAccumulate();
+    // explainCount();
+    explainFind();
 }
