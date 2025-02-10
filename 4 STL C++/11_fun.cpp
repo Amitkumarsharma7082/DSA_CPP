@@ -60,10 +60,32 @@ and returns first find : 1 from array.
     // cout << find(arr, arr+5 , num) << endl; // output : 0x7ff7b7b4d178
 }
 
+// next_permutation
+void explainNextPermutation() {
+    string str = "bca";
+    // do this while (condition)
+    do {
+        cout << str << " "; // ouput : abc acb bac bca cab cba
+        // if start with bca : so only : bca cab cba give me the next permutation in
+        // order
+    } while (next_permutation(str.begin(), str.end()));
+}
+
+// prev_permutation
+void explainPrevPermutation() {
+    string str = "cba";
+    // do this while (condition)
+    do {
+        cout << str << " "; // ouput : cba cab bca bac acb abc
+        // if start with cba : start with cba to first abc; 
+    } while (prev_permutation(str.begin(), str.end()));
+}
 
 int main() {
     // expalinSort();
     // explainAccumulate();
     // explainCount();
-    explainFind();
+    // explainFind();
+    // explainNextPermutation();
+    explainPrevPermutation();
 }
