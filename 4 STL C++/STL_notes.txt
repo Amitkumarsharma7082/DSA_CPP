@@ -80,7 +80,8 @@ Iterators
     - count - done
     - find - done
     - comparator
-    - next_permutation
+    - next_permutation - done
+    - prev_permutation - donee
     - max_element
     - reverse
     - pow
