@@ -60,7 +60,7 @@ Iterators
     - insert 
     - erase
 
-10. unordered_set (lower_bound and upper_bound does not exist)
+10. unordered_set (lower_bound and upper_bound does not exist) -- Done
 
 11. map
     - insert / emplace / map[key] = value

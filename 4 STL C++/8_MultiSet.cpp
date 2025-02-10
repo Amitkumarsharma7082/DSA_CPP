@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <unordered_set>
 using namespace std;
 
 void explainMultiSet() {
@@ -34,7 +35,23 @@ void explainMultiSet() {
 
    cout << ms.count(1);
 }
+void explainUnorderedSet() {
+    unordered_set<int> st;
+    st.insert(1);
+    st.insert(0);
+    st.insert(1);
+    st.insert(2);
+    st.insert(1);
+    st.insert(21);
 
+    for (auto it : st) {
+        cout << it << " ";
+    }
+    cout << endl;
+
+}
 int main() {
-    explainMultiSet();
+    // explainMultiSet();
+    explainUnorderedSet(); // lb and ub is not apply because it is not sorted
+    // better time complexity
 }
