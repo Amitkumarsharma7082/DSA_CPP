@@ -62,11 +62,24 @@ Iterators
 
 10. unordered_set (lower_bound and upper_bound does not exist) -- Done
 
-11. map
+11. map -- Done
     - insert / emplace / map[key] = value
     - find
     - empty
     - size
+    - lower_bound
+    - upper_bound
+    - unordered_map
+
+12. multimap
+    - equal range
+
+13. Functions and Algorithms
+    - sort
+    - accumulate
+    - count
+    - find
+    - comparator
 
 
 
