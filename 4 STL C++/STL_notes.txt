@@ -71,7 +71,7 @@ Iterators
     - upper_bound
     - unordered_map
 
-12. multimap
+12. multimap -- Done
     - equal range
 
 13. Functions and Algorithms
@@ -80,6 +80,10 @@ Iterators
     - count
     - find
     - comparator
+    - next_permutation
+    - max_element
+    - reverse
+    - pow
 
 
 
