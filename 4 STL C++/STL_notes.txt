@@ -53,10 +53,10 @@ Iterators
     - find() - done
     - erase (iterator, element, (it1, it22)) - done
     - count - done
-    - lower_bound
-    - upper_bound
+    - lower_bound - done
+    - upper_bound - done
 
-9. multiset
+9. multiset -- Done
     - insert 
     - erase
 
