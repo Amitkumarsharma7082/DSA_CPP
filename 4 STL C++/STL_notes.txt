@@ -79,12 +79,12 @@ Iterators
     - accumulate - done
     - count - done
     - find - done
-    - comparator
+    - comparator - 
     - next_permutation - done
-    - prev_permutation - donee
-    - max_element
-    - reverse
-    - pow
+    - prev_permutation - done
+    - max_element - done
+    - reverse - done
+    - pow - done
 
 
 

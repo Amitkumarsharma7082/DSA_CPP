@@ -31,7 +31,7 @@ void explainAccumulate() {
     // arr, arr + 5, 0 > 0 means that start from 0 like also : 1 
     // if we start with 1 + all array element
     int sum = 0;
-    // cout << accumulate(arr, arr + 5, sum) << " " << endl;// ouput : 16 (6+2+1+7+0 + (0))
+    cout << accumulate(arr, arr + 5, sum) << " " << endl;// ouput : 16 (6+2+1+7+0 + (0))
  
 }
 
@@ -81,11 +81,30 @@ void explainPrevPermutation() {
     } while (prev_permutation(str.begin(), str.end()));
 }
 
+
+// max_element
+void explainMaxElement() {
+    int arr[5] = {6, 2, 1, 7, 0};
+    auto it = min_element(arr, arr+5);
+    cout << *it << " " << endl; // output : 7(max element)
+}
+
+// reverse
+void explainReverse() {
+    int arr[5] = {6, 2, 1, 7, 0};
+    reverse(arr, arr+5);
+    
+    for (auto it : arr) {
+        cout << it << " "; // ouput : 0 7 1 2 6
+    }
+}
 int main() {
     // expalinSort();
     // explainAccumulate();
     // explainCount();
     // explainFind();
     // explainNextPermutation();
-    explainPrevPermutation();
+    // explainPrevPermutation();
+    // explainMaxElement();
+    explainReverse();
 }
