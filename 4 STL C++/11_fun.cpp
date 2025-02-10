@@ -98,6 +98,39 @@ void explainReverse() {
         cout << it << " "; // ouput : 0 7 1 2 6
     }
 }
+
+/*
+el1, el2
+tells true if el1 is before el2
+tells false if el1 has to be after el2
+*/
+bool internalComparator(int el1, int el2) {
+    if (el1 < el2) return false;
+    return true;
+}
+// Comparator
+void explainComparator() {
+    // think sort the array 1st
+    int arr[4] = {5, 6, 1, 2};
+    sort(arr, arr+4, internalComparator); // 6 5 2 1 
+
+    for (auto i : arr) {
+        cout << i << " "; // ouput : 1 2 5 6
+    }
+    cout << endl;
+
+    // assume element 1 : 5 and element 2 : 6
+    // checking : 5 is greater than 6 or not
+    // there is internal comparator 
+
+
+    /*
+    tells the internal comparator to sort and say it
+    reverse the array
+    bool compartor
+    */
+}
+
 int main() {
     // expalinSort();
     // explainAccumulate();
@@ -106,5 +139,6 @@ int main() {
     // explainNextPermutation();
     // explainPrevPermutation();
     // explainMaxElement();
-    explainReverse();
+    // explainReverse();
+    explainComparator();
 }

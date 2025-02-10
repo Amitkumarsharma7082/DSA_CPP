@@ -79,7 +79,7 @@ Iterators
     - accumulate - done
     - count - done
     - find - done
-    - comparator - 
+    - comparator - done
     - next_permutation - done
     - prev_permutation - done
     - max_element - done
