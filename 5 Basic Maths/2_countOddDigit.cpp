@@ -2,10 +2,6 @@
 using namespace std;
 
 int countOddDigit(int n) {
-        // Base case
-        if (n == 0) {
-            return 1;
-        }
         // CountOddDigit : n%10 : lastDigit to check
         int count = 0;
         while (n > 0) {
