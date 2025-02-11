@@ -18,8 +18,8 @@ int countOddDigit(int n) {
             n = n / 10;
         }
         return count;
-    }
 }
+
 
 int main() {
     int n;
