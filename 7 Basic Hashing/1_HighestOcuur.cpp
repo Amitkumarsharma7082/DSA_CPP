@@ -14,9 +14,10 @@ class Solution {
         */
 
         // Find the maximum element in the vector
+        // maxi all array is 0
         int maxi = nums[0];
         for (int i = 1; i < nums.size(); i++) {
-            maxi = max(maxi, nums[i]);
+            maxi = max(maxi, nums[i]); // find the maxi element for hash + 1
         }
 
         // Create a hash array to store counts of elements
@@ -24,18 +25,23 @@ class Solution {
 
         // Count the frequency of each element in the input vector
         for (int i = 0; i < nums.size(); i++) {
-            hash[nums[i]]++;
+            hash[nums[i]]++; // count the element 0 to 1 and so on 
+            // like : 2 appears 2 times so hash[0] into hash[2]
         }
 
         // Find the element with the highest frequency
-        int maxCount = 0;
+        int maxCount = 0; // maaxCount 0 to convert the count maxCount
         int ele = -1;
+        cout << "Maxi : " << maxi << endl;
         for (int i = 0; i <= maxi; i++) {
+            cout << "Hash[i] : " << hash[i] << " MaxCount : " << maxCount << endl;
             if (hash[i] > maxCount) {
+                
                 maxCount = hash[i];
-                ele = i;
+                ele = i; // you want element not count
             }
         }
+        
 
         return ele;
     }

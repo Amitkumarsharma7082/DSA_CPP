@@ -1,43 +1,105 @@
-#include <bits/stdc++.h>
+/*
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    // Taking Input n: 
-    int n;
-    cin >> n;
+int find(int arr[], int n, int num) {
+    int count = 0;
 
-    // Declare a vector to store the array elements
-    vector<int> arr(n);
-
-    // Taking Input array: 
     for (int i = 0; i < n; i++) {
-        cin >> arr[i];
-    }
-
-    // Find the maximum element in the array
-    int maxi = *max_element(arr.begin(), arr.end());
-
-    // Create a hash array to count the frequency of elements
-    vector<int> hash(maxi + 1, 0);
-
-    // Populate the hash array with frequencies
-    for (int i = 0; i < n; i++) {
-        hash[arr[i]]++;
-    }
-
-    // Example: Handling queries (4 queries in this case)
-    int Q = 4;
-    while (Q--) {
-        int query;
-        cin >> query;
-
-        // Output the frequency of the query value
-        if (query <= maxi) {
-            cout << "Frequency of " << query << " is: " << hash[query] << endl;
-        } else {
-            cout << "Value out of range." << endl;
+        if (arr[i] == num) {
+            count ++;
         }
     }
+    return count;
+}
 
-    return 0;
+int main() {
+    
+    // input : size of arr
+    //         arr[]
+    //         query
+    //         numbers
+   
+   // Size of array
+   int n;
+   cout << "Enter the number : ";
+   cin >> n;
+
+   // Array
+   int arr[n];
+   cout << "Enter array : ";
+   for (int i = 0; i < n; i++) {
+    cin >> arr[i];
+   }
+
+   // Query
+   int q;
+   cout << "Enter number of query :";
+   cin >> q;
+
+   while(q--) {
+    int num;
+    cin >> num;
+    
+    int ans = find(arr, n, num);
+    cout << "How many time this " << num  << " appear : " << ans << endl;
+   }
+
+} 
+*/
+
+
+
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int find(int arr[], int n, int num) {
+    int count = 0;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == num) {
+            count ++;
+        }
+    }
+    return count;
+}
+
+int main() {
+    int n;
+    cout << "Enter the number : ";
+    cin >> n;
+// we decleare maxi because hash arr + 1
+    int maxi = INT_MIN;
+
+    for (int i = 0; i < n; i++) {
+        cin >> arr[i];
+        maxi = max(maxi, arr[i]);
+    }
+
+    int hash[maxi + 1] = {0}; // all element are zero 
+
+    for (int i = 0; i < n; i++) {
+        hash[arr[i]]++; // hash[6] : [0]>[1]
+    }
+    int q;
+    cin >> q;
+
+    for (int i = 0; i < n; i++) {
+        int num;
+        cin >> num;
+
+        if (num > maxi) {
+            cout << "0" << endl;
+        }
+        else {
+            int ans = find(arr, n, num);
+            cout << "Answer : " << ans << endl;
+        }
+
+    }
+
 }
