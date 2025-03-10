@@ -10,12 +10,14 @@ using namespace std;
 
 void bubbleSort(int arr[], int n) {
     for (int i = n-1; i >= 1; i--) {
+        cout << "Outter Loop : " << i << " ";
         int didSwap = 0;
         for (int j = 0; j <= i-1; j++) { // why i - 1 
         // because j+1 and j compare last value is compare with garbage
-
+cout << "Inner Loop : " << i << " ";
         // Compare adjacent elements and swap them if they're in the wrong order
             if(arr[j] > arr[j+1]) {
+                
                 // if false don't swap
                 // Adjacent Swap
                 swap(arr[j], arr[j+1]);
