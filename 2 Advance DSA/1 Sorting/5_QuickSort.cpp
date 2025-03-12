@@ -4,7 +4,8 @@ using namespace std;
 int partition(vector<int>& arr, int low, int high) {
     int i = low;
     int j = high;
-    
+    //! DRY RUN 
+
     int pivot = arr[low];
     cout << "Pivot : " << pivot << endl;
      while(i < j) {
