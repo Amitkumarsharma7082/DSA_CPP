@@ -35,6 +35,9 @@ int main() {
     int ans = sol.pascalTriangleI(r, c);
 
     cout << "The element in the rth " << r << " and cth " << c << " in pascal's triangle is: " << ans << endl;
+    for (int col = 1; col <= r; col++) {
+      cout << sol.pascalTriangleI(r, col) << " ";
+    }
 
     return 0;
 }
