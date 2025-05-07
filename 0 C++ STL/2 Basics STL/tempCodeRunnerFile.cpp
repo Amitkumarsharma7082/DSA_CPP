@@ -1,0 +1,1 @@
+m.insert(["camera", 90]);
