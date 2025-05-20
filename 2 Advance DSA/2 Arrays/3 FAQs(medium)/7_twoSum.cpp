@@ -26,46 +26,26 @@ class Solution{
 //  }
 
 //! Optimal TC : O(N) + O(NlogN) SC : O(N)
- vector<int> twoSum(vector<int>& nums, int target) {
-      // size
-      int n = nums.size();
+ vector<int> twoSum(vector<int>& arr, int tar) {
+  unordered_map<int, int> m;
+  vector<int> ans;
 
-      // store the ans
-      vector<int> ans;
+  for(int i = 0; i < arr.size(); i++) {
+    // Given Arr : [5, 2, 11, 7, 15];
+    int first = arr[i];
 
-      // arr[] = [2, 6, 5, 8, 11]
-      // index[] = [0, 1, 2, 3, 4]
-      // pair[] = [(2,0), (6,1), (5,2), (8,3), (11,4)]
+    int sec = tar - first; // 9 - 7 = 2
 
-      vector<vector<int> > eleIndex;
-      for (int i = 0; i < n; i++) {
-        eleIndex.push_back({nums[i], i});
-      }
+// 2 in hashMap 
+    if (m.find(sec) != m.end()) {
+      ans.push_back(i); // 3
+      ans.push_back(m[sec]); // m[2] = 1
+    }
+    // store in hash map
+    m[first] = i; // {5,0}, {2, 1}, {11, 2}
+  }
+  return ans; // [3, 1]
 
-      //Sort by first element in ascending order
-      /*
-      The lambda function [](const vector<int>& a, const vector<int>& b) is the comparator used to decide the order of elements.
-      */
-        sort(eleIndex.begin(), eleIndex.end(), [](const vector<int>& a, const vector<int>& b) {
-           return a[0] < b[0]; 
-        });
-
-      int left = 0, right = n - 1;
-      while (left < right) {
-        int sum = eleIndex[left][0] + eleIndex[right][0];
-        if (sum == target) {
-          ans.push_back(eleIndex[left][1]);
-          ans.push_back(eleIndex[right][1]);
-          return ans;
-        }
-        else if (sum < target) {
-          left ++;
-        }
-        else {
-          right --;
-        }
-      }
-  return {-1, -1};
  }
 };
 
