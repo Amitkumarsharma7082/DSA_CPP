@@ -22,7 +22,28 @@ class Solution{
  //! Better TC : O(NlogN), SC: 
 //  vector<int> twoSum(vector<int>& nums, int target) {
 //       vector<int> ans;
-//       int n = nums.size();
+//       sort(arr.begin(), arr.end());
+  // int start = 0;
+  // int end = arr.size() - 1;
+  
+  // while(start < end) {
+  //     int sum = arr[start] + arr[end];
+  //     if (sum == target) {
+  //         ans.push_back(start);
+  //         ans.push_back(end);
+  //         start++;
+  //         end--;
+  //         while (start < end && arr[start] == arr[start-1]) start++;
+  //         while(start < end && arr[end] == arr[end + 1]) end--;
+  //     }
+  //     else if(sum < target) {
+  //         start ++;
+  //     }
+  //     else {
+  //         end --;
+  //     }
+  // return ans;
+  // }
 //  }
 
 //! Optimal TC : O(N) + O(NlogN) SC : O(N)
