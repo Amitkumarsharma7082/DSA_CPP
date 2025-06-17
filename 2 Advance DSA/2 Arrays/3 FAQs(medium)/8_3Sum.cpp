@@ -91,7 +91,7 @@ class Solution {
             j++, k--;
 
             //! 2. More optimized Approach
-            // J is repeated value
+            // J  and k is repeated value ignore 
             while (j < k && arr[j] == arr[j - 1]) j++;
             while (j < k && arr[k] == arr[k + 1]) k--;
           }
