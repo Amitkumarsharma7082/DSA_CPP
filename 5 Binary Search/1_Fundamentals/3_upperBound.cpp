@@ -10,7 +10,7 @@ using namespace std;
 //         for (int i = 0; i < n; i++) {
 //             /* Check the condition for 
 //                the current element */
-//             if (nums[i] >= x) {
+//             if (nums[i] > x) {
 //                 // If lower bound is found 
 //                 return i;
 //             }
@@ -32,7 +32,7 @@ public:
     while (start <= end) {
       int mid = start + (end - start) / 2;
 
-      if (arr[mid] >= x) {
+      if (arr[mid] > x) {
         ans = mid;
         end = mid - 1;
       }
